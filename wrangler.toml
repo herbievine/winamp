@@ -1,0 +1,13 @@
+name = "winamp"
+
+[[routes]]
+pattern = "winamp.herbievine.com"
+zone_name = "herbievine.com"
+custom_domain = true
+
+[vars]
+VITE_API_URL = "https://haxel.herbievine.com"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
