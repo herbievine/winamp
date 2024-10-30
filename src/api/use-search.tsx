@@ -18,6 +18,7 @@ async function getSearch(term: string) {
         albumId: z.number(),
         name: z.string(),
         trackCount: z.number(),
+        releaseYear: z.string(),
         url: z.string().url(),
       })
       .array(),

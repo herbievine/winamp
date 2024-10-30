@@ -32,10 +32,11 @@ function HomeComponent() {
                 href={`https://haxel.herbievine.com/album/${result.albumId}`}
                 className="flex space-x-4"
               >
-                <img src={result.url} className="w-20 h-20" />
-                <div className="flex flex-col space-y-1">
+                <img src={result.url} className="w-20 h-20 rounded-md" />
+                <div className="flex flex-col">
                   <span>Name: {result.name}</span>
                   <span>Track count: {result.trackCount}</span>
+                  <span>Released: {result.releaseYear}</span>
                 </div>
               </a>
             </li>
